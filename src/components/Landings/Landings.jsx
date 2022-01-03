@@ -17,7 +17,13 @@ const Landings = () => {
         try {
           const res = await axios.get(`http://localhost:5000/api/astronomy/landings/${select}/${value}`)
           const json = res.data
-          const landingArray = json.map(element =>{
+          //Antes de hacer el map hacemos un filter para sacar de la petición http los elementos a los que les faltan campos
+          const landingArray = json.filter(element => {
+            if(!element.year || !element.reclong){
+              return false
+            }
+            return true;
+          }).map(element =>{
             return {
               'name': element.name,
               'longitude': Number(element.reclong),
