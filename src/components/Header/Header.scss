@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: $title-color;
+}
+
+header{
+    background-color: $bg-menu;
+    // height: $header-height;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

@@ -65,7 +65,7 @@ const Landings = () => {
     <input type="submit" value='Search'/>
   </form>
   <div id="map">
-    <MapContainer center={[30, 0]} zoom={2} scrollWheelZoom={false}>
+    <MapContainer center={[30, 0]} zoom={2} scrollWheelZoom={false} className="mapCont">
       <TileLayer attribution='&copy; 
       <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' 
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

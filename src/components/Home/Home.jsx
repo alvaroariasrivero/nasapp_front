@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     async function fetchPicture(){
       try {
-        const res = await axios.get('https://api.nasa.gov/planetary/apod?api_key=K43dzq6lpM74DcJ6HIgBbcmSQ6o94sM8TbdHf0bn')
+        const res = await axios.get('https://api.nasa.gov/planetary/apod?api_key=MosJdOel85j1l0s0tnx1YnKnzPIgsE568C47KbDs')
         const json = res.data
         const image = {
           'title': json.title,
