@@ -68,6 +68,7 @@ li{
         font-weight: bold;
         text-align: center;
         user-select: none;
+        margin-left: 1rem;
     }
     
     .option{
@@ -79,5 +80,9 @@ li{
         border-color: rgb(14, 0, 51);
         border-width: 0.03rem;
         opacity: 0.8;
+    }
+
+    h1{
+        margin: 0.5rem auto;
     }
 }
