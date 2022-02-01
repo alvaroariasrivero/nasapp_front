@@ -1,3 +1,43 @@
 .picture{
     width: 60%;
 }
+
+/* .video{
+    width: 100%;
+    width: 83.34%;
+    height: 360px;
+} */
+
+.container {
+    position: relative;
+    /* width: 70%; */
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: 2rem 1rem 1rem 1rem;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 426px){
+    .container {
+        position: relative;
+        /* width: 100%; */
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        margin: 2rem 1rem 0 1rem;
+    }
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
