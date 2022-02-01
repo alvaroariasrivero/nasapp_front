@@ -1,7 +1,8 @@
 import React from "react";
+import './Footer.scss';
 
 const Footer = () => {
-  return <div>Made with love by Álvaro Arias Rivero</div>;
+  return <footer>Made with love by Álvaro Arias Rivero</footer>;
 };
 
 export default Footer;

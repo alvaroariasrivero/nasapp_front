@@ -2,27 +2,14 @@
     width: 60%;
 }
 
-/* .video{
-    width: 100%;
-    width: 83.34%;
-    height: 360px;
-} */
-
-.container {
-    position: relative;
-    /* width: 70%; */
-    height: 0;
-    padding-bottom: 56.25%;
-    margin: 2rem 1rem 1rem 1rem;
+.container{
+    margin-top: 2rem;
 }
+
 .video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 40rem;
+    height: 22.5rem;
 }
-
 
 
 @media only screen and (max-width: 426px){
