@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom';
 import Home from '../Home';
 import Landings from '../Landings';
 import Neas from '../Neas';
+import './Main.scss';
 
 const Main = () => {
   return <main>
