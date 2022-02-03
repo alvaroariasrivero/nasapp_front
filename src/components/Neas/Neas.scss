@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.scroll{
+    border-radius: 100%;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #D4C9F5;
+    background-color: $bg-card;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 0.5rem;
+}

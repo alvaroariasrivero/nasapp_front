@@ -11,6 +11,7 @@ const Home = () => {
       try {
         const res = await axios.get('https://api.nasa.gov/planetary/apod?api_key=MosJdOel85j1l0s0tnx1YnKnzPIgsE568C47KbDs')
         const json = res.data
+        console.log('Esto es json', json)
         if(json.media_type === 'video'){
           image = {
             'title': json.title,

@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
+import { animateScroll } from "react-scroll";
 import axios from 'axios';
 import Card from '../Card';
+import './Neas.scss'
 
 const Neas = () => {
 
@@ -22,7 +24,6 @@ const Neas = () => {
             'orbit_class': element.orbit_class
           }
         })
-        console.log('Esto es neasArray', neasArray)
         setNeas(neasArray.slice(0,50));
       } catch (error) {
         console.log('error', error)
@@ -42,6 +43,10 @@ const Neas = () => {
     paintCards();
   }
 
+  const top = () => {
+    animateScroll.scrollToTop();
+  }
+
   const paintCards = () => {
     return neas.map((nea, i) => <Card key={i} nea={nea}/>)
   }
@@ -57,6 +62,7 @@ const Neas = () => {
             <input type="submit" value='Search'/>
           </form>
           <>{paintCards()}</>
+          <button onClick={top} className="scroll">&#129145;</button>
         </div>;
 };
 
