@@ -1,5 +1,13 @@
 @import '../../styles/variables.scss';
 
+form{
+    margin-top: 1rem;
+}
+
+label{
+    padding: 0.063rem;
+}
+
 .scroll{
     border-radius: 100%;
     border: none;
@@ -12,4 +20,26 @@
     position: fixed;
     bottom: 1.5rem;
     right: 0.5rem;
+}
+
+@media only screen and (max-width: 426px){
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form > div{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0.25rem auto;
+    }
+
+    input[type="text"]{
+        width: 50%;
+    }
+
+    label{
+        width: 50%;
+    }
 }

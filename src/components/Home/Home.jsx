@@ -41,11 +41,10 @@ const Home = () => {
             {/* <p>Copyright: {picture.copyright}</p> */}
           </div>
   }else{
-    return <div>
+    return<figure>
             <img src={picture.hdurl} alt={picture.title} className='picture'/>
-            <p>Title: {picture.title}</p>
-            <p>Copyright: {picture.copyright}</p>
-          </div>
+            <figcaption>Title: {picture.title} - Copyright: {picture.copyright}</figcaption>
+          </figure>
   };
 };
 

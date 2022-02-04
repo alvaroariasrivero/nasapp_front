@@ -53,12 +53,18 @@ const Neas = () => {
 
   return <div>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="orbit_class">Orbti class: </label>
-            <input type="text" name="orbit_class" />
-            <label htmlFor="from">From year: </label>
-            <input type="text" name="from" />
-            <label htmlFor="to">To year: </label>
-            <input type="text" name="to" />
+            <div>
+              <label htmlFor="orbit_class">Orbti class: </label>
+              <input type="text" name="orbit_class" />
+            </div>
+            <div>
+              <label htmlFor="from">From year: </label>
+              <input type="text" name="from" />
+            </div>
+            <div>
+              <label htmlFor="to">To year: </label>
+              <input type="text" name="to" />
+            </div>
             <input type="submit" value='Search'/>
           </form>
           <>{paintCards()}</>
