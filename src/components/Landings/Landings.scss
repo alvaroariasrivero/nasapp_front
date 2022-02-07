@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.landignsReq{
+    width: 30%;
+}
+
+.landignsReq *{
+    width: 33%;
+    margin: 0 0.25rem;
+}
+
+.leaflet-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw; 
+    height: 75vh;
+}
+
+.mapCont{
+    z-index: 0;
+}
+
+@media only screen and (max-width: 769px){
+
+    .landignsReq{
+        width: 45%;
+    }
+
+    .landignsReq *{
+        margin: 0 0.125rem;
+    }
+}
+
+@media only screen and (max-width: 426px){
+
+    .landignsReq{
+        width: 80%;
+    }
+
+    .landignsReq *{
+        margin: 0 0.125rem;
+    }
+}
+
+@media only screen and (max-width: 321px){
+
+    .landignsReq{
+        width: 90%;
+    }
+}
+

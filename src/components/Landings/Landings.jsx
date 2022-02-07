@@ -3,7 +3,7 @@ import { MapContainer, TileLayer } from 'react-leaflet';
 import Markers from '../Markers';
 import axios from 'axios';
 import 'leaflet/dist/leaflet.css';
-import './Landings.css';
+import './Landings.scss';
 
 const Landings = () => {
 
@@ -56,12 +56,14 @@ const Landings = () => {
 
   return <>
   <form onSubmit={handleSubmit}>
-    <label htmlFor="selection">Search by: </label>
-    <select name="selection">
-      <option value="class">Class</option>
-      <option value="mass">Mass</option>
-    </select>
-    <input type="text" name='text'/>
+    <div className="landignsReq">
+      <label htmlFor="selection">Search by: </label>
+      <select name="selection">
+        <option value="class">Class</option>
+        <option value="mass">Mass</option>
+      </select>
+      <input type="text" name='text'/>
+    </div>
     <input type="submit" value='Search'/>
   </form>
   <div id="map">

@@ -6,7 +6,7 @@ const Card = (props) => {
 
   const {nea} = props
 
-  return <div >
+  return <div className="card">
           <p>Designation: {nea.designation}</p>
           <p>Discovery year: {nea.discovery_year}</p>
           <p>Orbit class: {nea.orbit_class}</p>

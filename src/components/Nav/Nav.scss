@@ -62,6 +62,7 @@ li{
         border: 0.0625rem solid $title-color;
         color: $title-color;
         background-color: $bg-menu;
+        background: $bg-gradient;
         border-radius: 5px;
         width: 2rem;
         height: 2rem;
@@ -75,6 +76,7 @@ li{
     .option{
         display: block;
         background-color:$bg-menu;
+        background: $bg-gradient;
         margin: 0;
         padding: 0.625rem;
         border-style: solid;

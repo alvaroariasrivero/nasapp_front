@@ -2,10 +2,36 @@
 
 form{
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form > div{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin: 0.25rem auto;
+}
+
+form > input[type="submit"]{
+    width: 6.4rem;
+    margin: 0.5rem auto;
+    color: $title-color;
+    background-color: $bg-menu;
+    background: $bg-gradient;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+input[type="text"]{
+    width: 50%;
 }
 
 label{
     padding: 0.063rem;
+    width: 50%;
 }
 
 .scroll{
@@ -22,24 +48,17 @@ label{
     right: 0.5rem;
 }
 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0.5rem auto;
+}
+
 @media only screen and (max-width: 426px){
-    form{
-        display: flex;
-        flex-direction: column;
-    }
 
     form > div{
-        display: flex;
-        justify-content: space-around;
         width: 80%;
-        margin: 0.25rem auto;
-    }
-
-    input[type="text"]{
-        width: 50%;
-    }
-
-    label{
-        width: 50%;
     }
 }
