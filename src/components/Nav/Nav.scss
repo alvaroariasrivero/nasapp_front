@@ -4,7 +4,7 @@ h1{
     font-family: $plaster-font;
     color: $title-color;
     font-size: 2.5rem;
-    margin: 0.5rem;
+    margin: $spacing-sm;
 }
 
 .navbar{
@@ -44,7 +44,6 @@ li{
         padding: 0;
         width: 100%;
         z-index: 1;
-        border-radius: 5px;
     }
     
     #menu:checked  ~ ul{
@@ -64,13 +63,13 @@ li{
         background-color: $bg-menu;
         background: $bg-gradient;
         border-radius: 5px;
-        width: 2rem;
-        height: 2rem;
-        line-height: 2rem;
+        width: $spacing-lg;
+        height: $spacing-lg;
+        line-height: $spacing-lg;
         font-weight: bold;
         text-align: center;
         user-select: none;
-        margin-left: 1rem;
+        margin-left: $spacing-md;
     }
     
     .option{
@@ -86,6 +85,6 @@ li{
     }
 
     h1{
-        margin: 0.5rem auto;
+        margin: $spacing-sm auto;
     }
 }

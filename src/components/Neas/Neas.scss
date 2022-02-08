@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 form{
-    margin-top: 1rem;
+    margin-top: $spacing-md;
     display: flex;
     flex-direction: column;
 }
@@ -15,13 +15,13 @@ form > div{
 
 form > input[type="submit"]{
     width: 6.4rem;
-    margin: 0.5rem auto;
+    margin: $spacing-sm auto;
     color: $title-color;
     background-color: $bg-menu;
     background: $bg-gradient;
     border-radius: 5px;
     border: none;
-    padding: 0.5rem 0;
+    padding: $spacing-sm 0;
     cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ label{
     background-color: $bg-card;
     position: fixed;
     bottom: 1.5rem;
-    right: 0.5rem;
+    right: $spacing-sm;
 }
 
 .card-container{
@@ -53,7 +53,7 @@ label{
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 90%;
-    margin: 0.5rem auto;
+    margin: $spacing-sm auto;
 }
 
 @media only screen and (max-width: 426px){
